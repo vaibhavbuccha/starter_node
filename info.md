@@ -43,3 +43,18 @@
 -----------------------------
 ## Node JS Drawbacks
 -------------------------
+- Not efficient in handling CPU-intensive apps
+>  Being an event-based and a single threaded environment, Node.js is not suitable because it is not efficient enough to handle CPU-intensive apps. Generating audio, video, or editing graphics etc are some concurrent requests which cannot be managed by Node.js.
+
+- Not mature enough.
+> Node provides the developers with the access to a bunch of third-party modules already developed by the community. But this entire ecosystem is still pretty immature. The bugs and inconsistent version makes it unsuitable for the maintaining team.
+
+- Simplicity.
+> Compared to Node.js, PHP is pretty simple. PHP only has the right amount of complexity for creating an application that is not too complex.
+
+- No client app required.
+> Simply shipping the data in HTML form works more than anything else. PHP is designed to create that. This is one case where PHP can be more useful than Node.js.
+
+- Speed of Coding.
+> Most developers feel that PHP is faster for creating web apps. But when it comes to putting together a project quickly, PHP is definitely the best choice.
+
