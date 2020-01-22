@@ -84,3 +84,11 @@ var name = "another name";
 console.log(name);
 
 ```
+### diffrence b/w  Let and Var
+---
+| let | var |
+|:----:| :----:|
+|    ```  console.log(x); // -> error  let x = 10; ```   |   ```  console.log(x); // -> undefine  var x = 10; ```    |
+|  let gives you the privilege to declare variables that are limited in scope to the block, statement of expression unlike var. | var is rather a keyword which defines a variable globally regardless of block scope. |
+|  ```  let letVariable = “this is a let variable”;  console.log(window.letVariable); //undefined ```  | ``` var varVariable = “this is a var variable”;  console.log(window.varVariable); //this is a var variable``` |
+---
