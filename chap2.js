@@ -56,3 +56,30 @@ for(x of jsonObj2)
 {
     console.log(x.firstname);
 }
+
+
+// while loop
+
+// print a series
+
+let k = 1;
+while(k<=10){
+    console.log(k*19);
+    k++;
+}
+
+
+// do while loop
+
+
+let funstuff = (name, i)=>{
+    let a = 1;
+
+    do{
+        console.log('Hello ' +name);
+        a++;
+    }
+    while(name == 'Vaibhav'&& a <= i);
+   
+}
+funstuff('Vaibhav',5);
