@@ -1,15 +1,24 @@
 // The Node.js file system module allows you to work with the file system on your computer.
 const fs = require('fs');
-const http = require('http');
 
+// delete opertaion Asynchronus
 
-// read file 
-http.createServer((req,res)=>{
-    fs.readFile('read.html',(data,err)=>{
-        res.writeHead(200,{'Content-Type':'text/html'});
-        res.write(data);
-        res.end();
-    });
-}).listen(3000,'localhost',(exists)=>{
-    console.log('server running');
+/*
+fs.unlink('read.html',(err)=>{
+    if(err) throw err;
+    console.log(`file deleted`);
 });
+
+*/
+
+// delete  by synchronus call
+/*
+try {
+    fs.unlinkSync('read.html');
+    console.log('file deleted');
+}catch(err){
+
+}
+*/
+
+
