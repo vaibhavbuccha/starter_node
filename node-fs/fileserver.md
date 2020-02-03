@@ -37,3 +37,24 @@ try {
 ```
 
 > file rename opertaions
+
+```js
+fs.rename('test.txt', 'renamedfile.txt', function (err) {
+    if (err) throw err;
+    console.log('File Renamed!');
+  });
+ 
+ // 1st arg - actual filename
+ // 2nd arg - renamed filename
+
+```
+
+> file read opertation
+
+```js
+fs.readFile('renamedfile.txt', 'utf8',  function(err, data) {
+    if (err) throw err;
+    console.log(data);
+  });
+
+```

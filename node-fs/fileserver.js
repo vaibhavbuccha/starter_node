@@ -22,6 +22,17 @@ try {
 */
 
 // file rename opertaions
+/*
+fs.rename('test.txt', 'renamedfile.txt', function (err) {
+    if (err) throw err;
+    console.log('File Renamed!');
+  });
+  */
 
+//  file read operations
 
+fs.readFile('renamedfile.txt', 'utf8',  function(err, data) {
+    if (err) throw err;
+    console.log(data);
+  });
 
