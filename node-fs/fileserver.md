@@ -83,3 +83,12 @@ fs.appendFile('filename.txt', 'change in same file ', function (err) {
     console.log('Saved!');
   });
 ```
+> fs.open() create file
+The **fs.open()** method takes a "flag" as the second argument, if the flag is "w" for "writing", the specified file is opened for writing.
+
+```js
+fs.open('newfile2.txt', 'w', function (err, file) {
+    if (err) throw err;
+    console.log('created!');
+  });
+```
