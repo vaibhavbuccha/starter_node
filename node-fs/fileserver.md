@@ -58,3 +58,28 @@ fs.readFile('renamedfile.txt', 'utf8',  function(err, data) {
   });
 
 ```
+
+> file create operations
+
+The File System module has methods for creating new files:
+- *fs.appendFile()*
+- *fs.open()*
+- *fs.writeFile()*
+
+> The fs.appendFile() method appends specified content to a file. If the file does not exist, the file will be created:
+
+```js
+fs.appendFile('filename.txt', 'And file content is here!', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+```
+
+```js
+//   add text to the same file
+
+fs.appendFile('filename.txt', 'change in same file ', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+```
