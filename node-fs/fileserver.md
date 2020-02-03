@@ -84,6 +84,7 @@ fs.appendFile('filename.txt', 'change in same file ', function (err) {
   });
 ```
 > fs.open() create file
+
 The **fs.open()** method takes a "flag" as the second argument, if the flag is "w" for "writing", the specified file is opened for writing.
 
 ```js
@@ -91,4 +92,17 @@ fs.open('newfile2.txt', 'w', function (err, file) {
     if (err) throw err;
     console.log('created!');
   });
+```
+
+> fs.writeFile() create file
+
+The *fs.writeFile()* method replaces the specified file and content if it exists. If the file does not exist,
+a new file, containing the specified content, will be created:
+
+```js
+ fs.writeFile('newfile3.txt', 'This is also an content!', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+
 ```

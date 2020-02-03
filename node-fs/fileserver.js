@@ -80,3 +80,16 @@ fs.open('newfile2.txt', 'w', function (err, file) {
     console.log('created!');
   });
   */
+
+  // fs.writeFile()
+  /**
+   * The fs.writeFile() method replaces the specified file and content if it exists. If the file does not exist,
+   *  a new file, containing the specified content, will be created:
+   */
+
+  fs.writeFile('newfile3.txt', 'This is also an content!', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+
+  
