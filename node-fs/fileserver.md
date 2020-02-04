@@ -106,3 +106,17 @@ a new file, containing the specified content, will be created:
   });
 
 ```
+
+> Update file operation
+
+The File System module has methods for updating files:
+- fs.appendFile()
+- fs.writeFile()
+
+```js
+
+fs.appendFile('newfile2.txt', ' This is my new text.', function (err) {
+  if (err) throw err;
+  console.log('Updated!');
+});
+```
